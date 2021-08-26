@@ -1,0 +1,70 @@
+menu "Temperature Observer Config"
+
+  config MAXIMUN_CONNECT_RETRY
+    int "Maximum retry"
+      default 5
+      help
+        Set the Maximum retry count for trying to connect to wifi or mqtt broker
+
+  menu "Temperature Wifi Config"
+
+    config WIFI_SSID
+      string "Wifi SSID"
+      default ""
+      help
+        Wifi SSID network name
+
+    config WIFI_PASSWORD
+      string "Wifi Password"
+      default ""
+      help
+        Password for wifi
+
+  endmenu
+
+  menu "Temperature MQTT Config"
+    config BROKER_HOST
+      string "Broker Host"
+      default ""
+      help
+          The Broker hostname.
+
+    config BROKER_PORT
+      int "Broker Port"
+      default 1883
+        help
+          The port where to broker waits.
+
+    config MQTT_ROOM
+      string "Mqtt Room"
+      default "MyRoom"
+      help
+        The Room where one or more devices are located.
+
+    config MQTT_DEVICE_NAME
+      string "Mqtt Device Name"
+      default "MyDevice"
+      help
+        The unique name of a device.
+
+    choice BROKER_TRANSPORT
+      bool  "Broker Transport Protcol"
+      default TRANSPORT_MQTT
+
+      config TRANSPORT_MQTT
+        bool "mqtt"
+
+      config TRANSPORT_MQTTS
+        bool "mqtts"
+
+      config TRANSPORT_WS
+        bool "ws"
+
+      config TRANSPORT_WSS
+        bool "wss"
+
+    endchoice
+
+  endmenu
+
+endmenu

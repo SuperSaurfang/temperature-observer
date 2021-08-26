@@ -1,0 +1,7 @@
+build/
+components/
+sdkconfig
+sdkconfig.old
+
+main/embed
+test/

@@ -1,0 +1,45 @@
+{
+  "C_Cpp.clang_format_style": "Visual Studio",
+  "editor.formatOnSave": false,
+  "[cpp]": {
+    "editor.quickSuggestions": true
+  },
+  "[c]": {
+    "editor.quickSuggestions": true
+  },
+  "C_Cpp.intelliSenseEngineFallback": "Enabled",
+  "idf.portWin": "COM6",
+  "idf.adapterTargetName": "esp32",
+  "idf.flashType": "UART",
+  "idf.espIdfPathWin": "e:\\esp\\esp-idf",
+  "idf.toolsPathWin": "e:\\esp\\.espressif",
+  "files.associations": {
+    "algorithm": "cpp",
+    "atomic": "cpp",
+    "complex": "cpp",
+    "deque": "cpp",
+    "fstream": "cpp",
+    "functional": "cpp",
+    "future": "cpp",
+    "istream": "cpp",
+    "map": "cpp",
+    "memory": "cpp",
+    "mutex": "cpp",
+    "ostream": "cpp",
+    "random": "cpp",
+    "ratio": "cpp",
+    "vector": "cpp",
+    "xhash": "cpp",
+    "xlocale": "cpp",
+    "xlocnum": "cpp",
+    "xstring": "cpp",
+    "xutility": "cpp",
+    "*.rh": "cpp",
+    "*.tcc": "cpp",
+    "charconv": "cpp",
+    "iomanip": "cpp",
+    "thread": "cpp",
+    "xlocmon": "cpp",
+    "shared_mutex": "cpp"
+  }
+}
